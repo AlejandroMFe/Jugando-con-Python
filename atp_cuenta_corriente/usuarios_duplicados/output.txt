@@ -1,0 +1,21 @@
+Usuario; Nombre; Nro. DNI; Area Agenda
+GUSTAVOA;Nuñez Gustavo Adrian;31294806;Departamento Puestos Fijos
+GNUEZb;Gustavo Nuñez;31294806;Departamento Personal
+GUSTAVOA;Nuñez Gustavo Adrian;31294806;Departamento Puestos Fijos
+GNUEZb;Gustavo Nuñez;31294806;Departamento Personal
+FACUNDOL;FACUNDO JUAN CLAUDIO LOBOS;32729114;Direccion de Fiscalización Externa
+LOBOSF;Facundo Lobos;32729114;Direccion de Fiscalización Interna
+ANONISE;Elvira Anonis;14227718;Direccion Tecnica Tributaria
+ELVIRAA;Elvira Anonis;14227718;Departamento Secretaría Técnica
+ANONISE;Elvira Anonis;14227718;Direccion Tecnica Tributaria
+ELVIRAA;Elvira Anonis;14227718;Departamento Secretaría Técnica
+MARIANOM;Micucci Mariano Nicolas;40173642;Departamento Sumario y Multas
+MICUCCIM;Micucci Mariano Nicolas;40173642;Departamento Ejecuciones Judiciales
+MARIANOM;Micucci Mariano Nicolas;40173642;Departamento Sumario y Multas
+MICUCCIM;Micucci Mariano Nicolas;40173642;Departamento Ejecuciones Judiciales
+FACUNDOL;FACUNDO JUAN CLAUDIO LOBOS;32729114;Direccion de Fiscalización Externa
+LOBOSF;Facundo Lobos;32729114;Direccion de Fiscalización Interna
+JMANUEL;Juan Manuel Leguiza;33732667;Departamento Rurales
+JMLEGUIZA;JUAN MANUEL LEGUIZA;33732667;Departamento Rurales
+JMANUEL;Juan Manuel Leguiza;33732667;Departamento Rurales
+JMLEGUIZA;JUAN MANUEL LEGUIZA;33732667;Departamento Rurales

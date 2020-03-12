@@ -1,0 +1,50 @@
+# Para crear un entorno virtual usar el siguiente codigo:
+
+python -m venv "name_of_enviroment"
+
+# para activar el entorno
+# ir al directorio del entorno y activar python
+name_of_enviroment\Scripts\activate.bat
+
+# para crear un archivo con todos los requisitos del entorno
+pip freeze
+
+# para ponerlo en un archivo requirement.txt
+pip freze > requirements.txt
+
+# para desactivar el entorno
+deactivate
+
+# para borra el entornoy todos los directorios
+# dentro de la carpeta
+rmdir name_of_enviroment /s 
+
+# crear carpeta de mi proyecto
+mkdir my_project
+
+# luego puedo crear un entorno virtual dentro
+python my_project\venv
+
+# para activar el entorno virtual
+my_project\venv\Scripts\activate.bat
+
+# para instalar desde un archivo desde requirement.txt
+# ingresr el path correcto del archivo requirements.txt
+pip install -r requirements.txt
+
+# crear script.py fuera de la carpeta del proyecto
+# no poner nada dentro de la carpeta del entorno virtual (venv)
+
+# crear un entorno que pueda acceder a todos los modulos que tengo instalados en mi entorno global osea mi python global
+python -m venv venv --system-site-package
+
+# python -m (nombre_del_modulo) (nomobre_de_la_carpeta) --system-site-package
+# ahora el entorno tambien tiene acceso a todos los modulos instalados globalmente
+
+# para ver una lista de los modulos instalados solo en el entorno virtual
+pip list --local
+pip freeze --local # funciona tambien
+
+# los paquetes intalados en los entornos virtuales(venv) NO se instalan en el entorno global
+
+

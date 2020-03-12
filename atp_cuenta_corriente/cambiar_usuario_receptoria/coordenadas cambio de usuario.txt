@@ -1,0 +1,120 @@
+# Iniciando desde la pantalla principal del cta. cte.
+#
+#
+# Certificado fiscal p/ Contratar
+(739; 31)
+# -> Receptorias habilitadas
+(762; 184)
+# -> Pantalla de Receptorias
+# Seleccionar Casilla de Villa Angela
+(492; 375)
+# (la otra opciona es Casilla de Coronel Dugraty) - (492; 544)
+# btn_modificar
+(837; 174)
+# Pantalla Actualiza Operadores
+# Seleccionar Casilla(3°) usuario Josei
+# ¡ATENCIÓN! Esto probablemente cambie de lugar ya que estan ordenadas por fechas las casillas
+(393; 373)
+# btn_inhabilitar
+(921; 322)
+# btn_cerrar
+(923; 504)
+# Dar Alta en Coronel Dugraty
+# Seleccionar Casilla Coronel Dugraty
+(494; 547)
+# btn_modificar
+(839; 172)
+# Pantalla Actualiza Operadores
+# input_nuevo_operador -> "josei"
+(595; 286)
+# ingresar -> "josei"
+keyboard.type("josei")
+# btn_habilitar
+(736; 285)
+# btn_cerrar
+(918; 505)
+# Pantalla Receptorias
+#btn_cerrar
+(839; 578)
+
+#####################################
+###########   Paso 3   ##############
+#####################################
+#
+# desde la pantalla principal del cta cte
+#
+# -> Archivo
+(28; 31)
+# -> Receptorias
+(62; 324)
+# -> Asignar Usuarios
+(380; 324)
+# Pantalla de Gestion Receptorias
+# input_nombre_receptoria -> "villa angela"
+(520; 230)
+# keyboard -> "villa angela"
+keyboard.type("villa angela"
+# bnt_buscar
+(849; 227)
+# Seleccionar Casilla (1°) Villa Angela
+(367; 290)
+# bnt_ver_personas
+(952; 273)
+# Pantalla Gestion Receptorias 
+# seleccionar casilla 2° -> jose bigues
+(406; 306)
+# btn_desasignar_personas
+(909; 316)
+# Pantalla: ¿Confirmar la desasignacion de la persona seleccionada?
+# btn_si
+(716; 430)
+# Pantalla: la persona a sido desasignada de la receptoria actual
+# btn_aceptar
+(829; 430)
+# btn_cerrar
+(907; 524)
+# Pantalla: principal cta cte
+# ir a Archivo -> Receptorias -> Asignar Usuarios
+# repetir ese proceso debajo y pegar las coordenadas
+# acá
+#
+#
+#
+#
+# input_nombre_receptoria
+(537; 230)
+# keyboard -> "coronel"
+keyboard.type("coronel")
+# btn_buscar
+(852; 227)
+# Seleccionar 1° casilla -> coronel dugraty
+(366; 287)
+# btn_ver_personas
+(958; 272)
+# btn_asignar_personas
+(902; 272)
+# btn_buscar
+(793; 392)
+# input_nombre_apellido_pserona
+(572; 227)
+# keyboard -> "jose bigues"
+keyboard.type("jose bigues")
+# btn_buscar
+(869; 225)
+# seleccionar casilla 1°
+(353; 275)
+# btn_seleccionar
+(983; 257)
+# btn_confirmar
+(914; 301)
+# Pantalla: alta exitosa
+# btn_aceptar
+(690; 428)
+# btn_cerrar
+(900; 525)
+# btn_cerrar
+(961; 524)
+# FIN: termina en pantalla principal cta cte
+
+
+

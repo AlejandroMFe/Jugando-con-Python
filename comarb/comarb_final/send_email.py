@@ -5,10 +5,13 @@ from email.mime.text import MIMEText
 
 # my = the sender's email address
 # you ==the recipient's email address
-sender_gmail = "python.notificaciones@gmail.com"
-sender_gmail_passwords = os.environ.get("PYTHON_GMAIL_PASSWORD")
+# "python.notificaciones@gmail.com"
+sender_gmail = "atp.chaco.informatica@gmail.com"
+# "PYTHON_GMAIL_PASSWORD"
+sender_gmail_passwords = os.environ.get("ATP_GMAIL_PASSWORD")
+
 # ,"mvmotter@chaco.gob.ar","franco.biolchi@chaco.gob.ar", "atp.somontiel@chaco.gob.ar]
-receive_mail = ["alejandro.mfe@gmail.com"]
+receive_mail = ["atp.amfernandez@chaco.gov.ar"]
 host = "smtp.gmail.com"
 port = 465
 

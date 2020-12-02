@@ -1,5 +1,6 @@
 import send_email
 import datetime
+import chromedriver_binary
 from datetime import timedelta
 from comarb_class import Comarb
 from selenium import webdriver
@@ -29,6 +30,7 @@ def set_options_webdriver(download_dir):
     browser_options = Options()
     browser_options.add_argument("--headless")
     browser_options.add_argument("--disable-gpu")
+    browser_options.binary_location = "D:\\Development\\Resources\\GoogleChromePortable83\\App\\Chrome-bin\\chrome.exe"
     prefs = {"download.default_directory": download_dir,
              "download.prompt_for_download": False,
              "download.directory_upgrade": True,

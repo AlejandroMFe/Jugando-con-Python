@@ -14,7 +14,7 @@ import os
 class Comarb:
     # historial de registro de los pasos que realiza el proceso.
     log = "--"*3 + "Registro de Actividad" + "--"*3 + "\n"
-    download_dir: str = "D:\\Descargas\\comarb_descargas\\"
+    download_dir: str = "C:\\temp\\"  # "D:\\Descargas\\comarb_descargas\\"
     # nombre del archivo a descargar con fecha de un día antes
     xml_filename: str = ""
     # camino completo del archivo descargado
@@ -44,13 +44,13 @@ class Comarb:
     def __check_file_existence(self):
         # Chequea que el archivo exista
         # si NO existe lanza una excepcion
-        
+
         # Cuando aún esta descargando el archivo el chrome los nombra
         # como: XML_definitivo_906_2020-02-17.xml.crdownload
         chrome_download_extension = ".crdownload"
         file_steel_download = self.absolute_path_file + chrome_download_extension
         path_file_steel_download = Path(file_steel_download)
-        
+
         while path_file_steel_download.exists():
             sleep(1)
             print("Descargando...")
@@ -58,7 +58,7 @@ class Comarb:
         path = Path(self.absolute_path_file)
         if path.exists() and path.is_file():
             self.recording("--> Archivo Si Existe")
-        
+
         else:
             raise Exception("--> Archivo No Encontrado")
 
@@ -133,7 +133,8 @@ class Comarb:
         # Obtengo la fecha  del ultimo archivo procesado
         soup = BeautifulSoup(browser.page_source, "lxml")
         table = soup.find("table", id="Grid1ContainerTbl")
-        date_last_file_processed = table.tbody.tr.find(id="span_PADWEBFARC_0001").text
+        date_last_file_processed = table.tbody.tr.find(
+            id="span_PADWEBFARC_0001").text
 
         # date_last_file_processed = table.tbody.find(
         #    "tr", id="Grid1ContainerRow_0006").find("td", colindex="2").text
@@ -194,4 +195,10 @@ class Comarb:
         self.recording("--> Procesando, espere 20s... ")
         sleep(20)
         self.recording("--> Archivo Procesado")
+
+        # Borrando el archivo localmente.
+        if os.path.exists(self.absolute_path_file):
+            os.remove(self.absolute_path_file)
+            self.recording("--> Archivo borrado localmente")
+
         self.recording("--> Tarea Finalizada!...Exito!!!")
